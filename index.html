@@ -2,10 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itallo</title>
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Pianimple</title>
+
+    <link rel="stylesheet" href="css/piano.css">
 </head>
 <body>
-    <a href="pianimple/piano.html">Painimple</a>
+    <div class="title">
+        <h1>pianimple</h1>
+        <p>A simple virtual piano.</p>
+    </div>
+
+    <section class="piano-wrapper">
+        <div class="piano-box">
+            <ul class="white-keys">
+                <li class="key" data-key="a" data-note="C"></li>
+                <li class="key" data-key="s" data-note="D"></li>
+                <li class="key" data-key="d" data-note="E"></li>
+                <li class="key" data-key="f" data-note="F"></li>
+                <li class="key" data-key="g" data-note="G"></li>
+                <li class="key" data-key="h" data-note="A"></li>
+                <li class="key" data-key="j" data-note="B"></li>
+                <li class="key" data-key="k" data-note="C2"></li>
+            </ul>
+            <ul class="black-keys">
+                <li class="key" data-key="w" data-note="C#"></li>
+                <li class="key" data-key="e" data-note="D#"></li>
+                <li class="key" data-key="t" data-note="F#"></li>
+                <li class="key" data-key="y" data-note="G#"></li>
+                <li class="key" data-key="u" data-note="A#"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="audios">
+        <audio src="sounds/c3.mp3"  data-key="a"></audio>
+        <audio src="sounds/cs3.mp3" data-key="w"></audio>
+        <audio src="sounds/d3.mp3" data-key="s"></audio>
+        <audio src="sounds/ds3.mp3" data-key="e"></audio>
+        <audio src="sounds/e3.mp3" data-key="d"></audio>
+        <audio src="sounds/f3.mp3" data-key="f"></audio>
+        <audio src="sounds/fs3.mp3" data-key="t"></audio>
+        <audio src="sounds/g3.mp3" data-key="g"></audio>
+        <audio src="sounds/gs3.mp3" data-key="y"></audio>
+        <audio src="sounds/a3.mp3" data-key="h"></audio>
+        <audio src="sounds/as3.mp3" data-key="u"></audio>
+        <audio src="sounds/b3.mp3" data-key="j"></audio>
+        <audio src="sounds/c4.mp3" data-key="k"></audio>
+    </section>
+
+    <footer>
+        <p>Made by <a href="https://www.itallo.dev.br/">Itallo</a> </p>
+    </footer>
+    <script src="js/piano.js"></script>
 </body>
 </html>
